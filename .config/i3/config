@@ -36,12 +36,12 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+q exit
 bindsym $mod+Shift+p exec i3lock -c 000000
 
-bindsym XF86AudioRaiseVolume exec amixer set Master 5%+ unmute
-bindsym XF86AudioLowerVolume exec amixer set Master 5%- unmute
-bindsym XF86AudioMute exec amixer set Master toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+ unmute
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%- unmute
+bindsym XF86AudioMute exec --no-startup-id amixer set Master toggle
 
-bindsym XF86MonBrightnessUp exec brightnessctl set +5%
-bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
 bindsym $mod+minus gaps inner current minus 5
 bindsym $mod+equal gaps inner current plus 5
