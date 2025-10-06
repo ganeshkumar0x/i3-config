@@ -20,7 +20,7 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-bindsym $mod+s exec alacritty
+bindsym $mod+s exec --no-startup-id st
 bindsym $mod+e exec dmenu_run
 bindsym $mod+b exec firefox
 bindsym $mod+c kill
