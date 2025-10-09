@@ -19,6 +19,11 @@ nnoremap <silent> <C-p> :tabprev<CR>
 nnoremap <C-t> :tabnew<CR>
 inoremap <C-t> <Esc>:tabnew<CR>
 
+" Clipboard and select-all mappings
+nnoremap ^ ggVG
+vnoremap <Space>y "+y
+nnoremap <Space>p "+P
+
 " Mouse Settings
 set mouse=a mousehide
 
