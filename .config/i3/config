@@ -30,7 +30,7 @@ bindsym $mod+v split v
 bindsym $mod+Shift+v split h
 bindsym $mod+Shift+space floating toggle
 
-bindsym Print exec --no-startup-id sh -c 'mkdir -p ~/Downloads/screenshots && scrot -s ~/Downloads/screenshots/%d-%m-%Y_%H-%M-%S.png -e "xclip -selection clipboard -t image/png -i $f"'
+bindsym Print exec --no-startup-id sh -c 'mkdir -p ~/Downloads/screenshots && scrot -s ~/Downloads/screenshots/%d-%m-%Y_%H-%M-%S.png -e "xclip -selection clipboard -t image/png -i \$f"'
 
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
